@@ -1,5 +1,4 @@
-mod kinematics;
-use crate::kinematics::kinematics;
+use kinematics::kinematics::kinematics;
 
 use std::io;
 
@@ -33,6 +32,8 @@ fn main() -> Result<(), io::Error> {
     }
 
     println!("{:^w$}", "\n\n\nKinematics Solver\n\n\n");
+
+    kinematics(5.0, None, 3.1, None, 5.0);
 
     let a_input: String = Input::<String>::new()
         .with_prompt("Acceleration")

@@ -65,6 +65,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "kinematics"
+version = "0.1.0"
+dependencies = [
+ "dialoguer",
+ "libm",
+ "terminal_size",
+]
+
+[[package]]
 name = "libc"
 version = "0.2.126"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -75,15 +84,6 @@ name = "libm"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33a33a362ce288760ec6a508b94caaec573ae7d3bbbd91b87aa0bad4456839db"
-
-[[package]]
-name = "math"
-version = "0.1.0"
-dependencies = [
- "dialoguer",
- "libm",
- "terminal_size",
-]
 
 [[package]]
 name = "once_cell"
