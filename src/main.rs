@@ -1,7 +1,7 @@
 mod kinematics;
 use crate::kinematics::kinematics;
 
-use std::{io, str::FromStr};
+use std::io;
 
 use dialoguer::Input;
 use terminal_size::{terminal_size, Height, Width};
