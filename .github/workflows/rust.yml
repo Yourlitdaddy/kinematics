@@ -27,6 +27,8 @@ jobs:
   linux_arm7:
     name: Linux ARMv7
     runs-on: ubuntu-latest
+    env:
+       RUSTFLAGS: -C target-feature=+crt-static
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
